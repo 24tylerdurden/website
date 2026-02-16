@@ -18,6 +18,7 @@
       <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -26,7 +27,7 @@
     <div class="hero container">
       <p class="kicker">Hello, I am</p>
       <h1>Pavan Illa</h1>
-      <p class="subtitle">Senior Backend Engineer | Distributed Systems Specialist</p>
+      <p class="subtitle">Senior Backend Engineer | Distributed Systems </p>
       <div class="hero-actions">
         <a class="btn primary" href="#projects">View Projects</a>
         <a class="btn secondary" href="mailto:pavanilla457@gmail.com">Email Me</a>
@@ -44,27 +45,6 @@
       </p>
     </section>
 
-    <section id="projects" class="section container reveal">
-      <h2>Featured Projects</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>TerryBerry (BeWell) - Senior Backend Engineer</h3>
-          <p>Architected scalable solutions for 6M+ user health platform, built CDC pipelines, and executed 40M+ record zero-downtime migrations. Optimized P99 latencies by 30% and integrated AI localization pipeline.</p>
-          <a href="#" aria-label="Learn more about TerryBerry work">Learn More</a>
-        </article>
-        <article class="card">
-          <h3>Radius Agent - Backend Engineer</h3>
-          <p>Built real-time video conferencing & chat solution using Agora/PubNub/Socket.io. Led CRM architecture migration for 20M+ records and automated agent onboarding with DocuSign integration.</p>
-          <a href="#" aria-label="Learn more about Radius Agent work">Learn More</a>
-        </article>
-        <article class="card">
-          <h3>Intelligent Case Resolution System</h3>
-          <p>AI-powered triage system using LLMs to classify business alerts, reducing manual triage by 50% through real-time event streaming and dynamic context retrieval. Built with React, Prisma, LangChain, and OpenAI.</p>
-          <a href="#" aria-label="Learn more about AI project">Learn More</a>
-        </article>
-      </div>
-    </section>
-
     <section id="skills" class="section container reveal">
       <h2>Skills</h2>
       <ul class="skills-list">
@@ -78,7 +58,6 @@
         <li>Spring Boot</li>
         <li>Socket.io</li>
         <li>WebSockets</li>
-        <li>CDC Pipelines</li>
         <li>Microservices</li>
         <li>MySQL</li>
         <li>Redis</li>
@@ -89,8 +68,56 @@
         <li>GCP</li>
         <li>Docker</li>
         <li>S3</li>
-        <li>GitHub Actions</li>
       </ul>
+    </section>
+
+    <section id="experience" class="section container reveal">
+      <h2>Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Nov 2024 – Present</div>
+          <div class="timeline-content">
+            <h3>TerryBerry (BeWell)</h3>
+            <p class="timeline-title">Senior Backend Engineer | Health & Wellness Platform (6M+ Users)</p>
+            <a href="https://www.terryberry.com" target="_blank" rel="noopener noreferrer" class="company-link">terryberry.com</a>
+            <ul class="timeline-points">
+              <li><strong>Architectural Scalability:</strong> Solved platform-wide performance degradation by decoupling a 6M-user analytics/email engine using a multi-worker, queue-segregated architecture; eliminated CPU-intensive bursts during weekly crons.</li>
+              <li><strong>Data Integrity & Migration:</strong> Engineered a unified community feed and executed a zero-downtime migration of 40M records utilizing data chunking and idempotent queue-based upsert patterns.</li>
+              <li><strong>Distributed Systems:</strong> Built a robust Change Data Capture (CDC) pipeline to synchronize content between Umbraco CMS and the core platform, ensuring eventual consistency across heterogeneous data stores.</li>
+              <li><strong>Performance Engineering:</strong> Diagnosed and mitigated critical master-follower replication lags, optimizing P99 and P95 latency metrics for high-traffic read operations.</li>
+              <li><strong>AI Integration:</strong> Developed an automated localization pipeline using OpenAI Prompt Engineering and event-driven crons to translate platform content into 8 languages with 90% less manual effort.</li>
+              <li><strong>Third-Party Ecosystems:</strong> Engineered a scalable Garmin Health integration via secure webhooks and expanded the platform to support reseller-based Program-vs-Program challenge logic.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-date">Mar 2022 – Oct 2024</div>
+          <div class="timeline-content">
+            <h3>Radius Agent</h3>
+            <p class="timeline-title">Backend Engineer | Real Estate SaaS & AI Solutions</p>
+            <a href="https://www.radiusagent.com" target="_blank" rel="noopener noreferrer" class="company-link">radiusagent.com</a>
+            <ul class="timeline-points">
+              <li><strong>Real-time Communication:</strong> Designed and launched an in-house Video Conferencing & Chat solution (Agora/PubNub/Socket.io), featuring room recording, recurrence, and automated S3 archival for AI training.</li>
+              <li><strong>Core Infrastructure Refactor:</strong> Spearheaded a high-stakes migration of the core CRM from client-level to transaction-level architecture, enabling complex multi-state transaction handling for 20M+ records.</li>
+              <li><strong>Workflow Automation:</strong> Fully automated the agent onboarding lifecycle by integrating DocuSign for ICA generation and credit API checks, eliminating manual overhead for 6 staff members (40% faster turnaround).</li>
+              <li><strong>AI & Sync Pipelines:</strong> Built MEL (AI Chatbot) with deep integration into client phonebooks and state documents; established a bi-directional data pipeline between the platform and HubSpot CRM.</li>
+              <li><strong>API Optimization:</strong> Migrated legacy services from Flask to FastAPI with async streaming, resulting in a 2x throughput increase for LLM inference workflows.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container reveal">
+      <h2>Featured Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Intelligent Case Resolution System</h3>
+          <p>AI-powered triage system using LLMs to classify business alerts, reducing manual triage by 50% through real-time event streaming and dynamic context retrieval. Built with React, Prisma, LangChain, and OpenAI.</p>
+          <a href="#" aria-label="Learn more about AI project">Learn More</a>
+        </article>
+      </div>
     </section>
 
     <section id="contact" class="section container reveal">
@@ -98,8 +125,8 @@
       <p>If you want to collaborate or just say hi, feel free to reach out.</p>
       <div class="contact-links">
         <a href="mailto:pavanilla457@gmail.com">pavanilla457@gmail.com</a>
-        <a href="https://github.com/pavanilla" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://linkedin.com/in/pavanilla" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/24tylerdurden" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/pavanIlla" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </section>
   </main>
