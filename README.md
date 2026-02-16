@@ -9,9 +9,9 @@ This is a ready-to-deploy personal website for GitHub Pages.
 
 ## Customize content
 Edit these placeholders in `index.html`:
-- `Your Name`
+- `pavanIlla`
 - `you@example.com`
-- `https://github.com/yourusername`
+- `https://github.com/pavanIlla`
 - `https://www.linkedin.com/in/yourusername`
 - project titles/descriptions/links
 
